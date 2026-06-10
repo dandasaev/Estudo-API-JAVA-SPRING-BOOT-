@@ -6,11 +6,6 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import med.voll.api.endereco.Endereco;
-import med.voll.api.medico.DadosAtualizarMedico;
-import med.voll.api.medico.DadosCadastroMedico;
-import med.voll.api.medico.Especialidade;
-
-import java.math.BigDecimal;
 
 
 @Table(name = "pacientes")
@@ -44,7 +39,7 @@ public class Paciente {
         this.cpf = dados.cpf();
     }
 
-    public void atualizarInformcoes(@Valid DadosAtualizarPaciente dados){
+    public void atualizarInformacoes(@Valid DadosAtualizarPaciente dados){
         if(dados.nome() != null){
             this.nome = dados.nome();
         }
@@ -56,7 +51,7 @@ public class Paciente {
         }
     }
 
-    public void inativar(){
+    public void excluir(Long id){
         this.ativo = false;
     }
 }
