@@ -1,10 +1,8 @@
 package med.voll.api.controller;
 
 import jakarta.transaction.Transactional;
-import med.voll.api.paciente.DadosCadastroPaciente;
-import med.voll.api.usuario.DadosCadastroUsuario;
-import med.voll.api.usuario.Usuario;
-import med.voll.api.usuario.UsuarioRepository;
+import med.voll.api.domain.usuario.DadosCadastroUsuario;
+import med.voll.api.domain.usuario.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
