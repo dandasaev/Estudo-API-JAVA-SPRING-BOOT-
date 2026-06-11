@@ -14,10 +14,9 @@ public class Usuario {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
-    private String nome;
-    private String email;
-    private Boolean admin = false;
+    private long id;
+    private String login;
+    private String senha;
 
 
 }
